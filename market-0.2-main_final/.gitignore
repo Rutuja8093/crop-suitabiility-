@@ -1,0 +1,89 @@
+# SoilPilot - Root Gitignore
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+
+# Python / Virtualenv
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+# Virtualenv lib (avoid ignoring frontend/lib)
+.venv/
+venv/
+ENV/
+
+# Testing & Coverage
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env.local
+
+# Database & Local Data
+*.sqlite3
+*.db
+data/gis/raw/*
+!data/gis/raw/.gitkeep
+data/gis/processed/*
+!data/gis/processed/.gitkeep
+data/gis/exports/*
+!data/gis/exports/.gitkeep
+data/soil/raw/*
+!data/soil/raw/.gitkeep
+data/soil/processed/*
+!data/soil/processed/.gitkeep
+data/gis/backup_pre_final_gat_mmkh/
+data/gis/staging/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Scratch scripts & temporary test artifacts
+scratch/
+*.pdf
+cookies.txt
+frontend/test_capture_*.js

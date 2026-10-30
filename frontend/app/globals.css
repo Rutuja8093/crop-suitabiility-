@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #2A7C13;
+  --color-secondary: #76C457;
+  --color-cream: #FFF8CF;
+  --color-beige: #FBE6C2;
+}
+
+body {
+  color: #1c2b18;
+  background-color: #fbfcf9;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessibility focus styles for farmers & keyboard navigation */
+:focus-visible {
+  outline: 2px solid #2A7C13;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbars for data tables and map controls */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f6f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4d1be;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #76C457;
+}
+
+/* Custom MapLibre and Leaflet Popup Styling for SoilPilot */
+.soilpilot-hud-marker,
+.soilpilot-custom-gat-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.maplibregl-popup-content,
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  padding: 0 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e2e8f0 !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(8px) !important;
+  overflow: hidden !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: inherit !important;
+}
+
+.maplibregl-popup-close-button,
+.leaflet-popup-close-button {
+  padding: 6px 10px !important;
+  color: #64748b !important;
+  font-size: 16px !important;
+  border-radius: 0.5rem !important;
+  right: 4px !important;
+  top: 4px !important;
+}
+
+.maplibregl-popup-close-button:hover,
+.leaflet-popup-close-button:hover {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+.maplibregl-popup-tip,
+.leaflet-popup-tip {
+  border-top-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Print Optimization for Soil Health Card */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 6mm 7mm;
+  }
+  html, body {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  header, footer, nav, aside, .print\:hidden {
+    display: none !important;
+  }
+  .soil-report-page {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    background: #ffffff !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
+
+

@@ -1,0 +1,62 @@
+services:
+  # PostgreSQL with PostGIS extension for spatial data handling
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: soilpilot_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-soilpilot_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-soilpilot_password}
+      POSTGRES_DB: ${POSTGRES_DB:-soilpilot_db}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-soilpilot_user} -d ${POSTGRES_DB:-soilpilot_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend service
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: soilpilot_backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-soilpilot_user}:${POSTGRES_PASSWORD:-soilpilot_password}@db:5432/${POSTGRES_DB:-soilpilot_db}
+      - CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+      - APP_ENV=development
+      - LOG_LEVEL=INFO
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./data:/data
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Next.js Frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../docker/Dockerfile.frontend
+    container_name: soilpilot_frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+
+volumes:
+  postgis_data:

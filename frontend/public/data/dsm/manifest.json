@@ -1,0 +1,1417 @@
+{
+  "version": 2,
+  "generatedAt": "2026-10-08T05:33:42+00:00",
+  "crs": "EPSG:4326",
+  "bounds": [
+    74.49423224,
+    18.13339233,
+    74.53618356,
+    18.16833679
+  ],
+  "size": [
+    467,
+    389
+  ],
+  "sampleKml": {
+    "file": "final_gat_mmkh.kml",
+    "label": "Malegaon Khurd Gats (final_gat_mmkh)",
+    "village": "Malegaon Kh.",
+    "taluka": "Baramati",
+    "district": "Pune",
+    "state": "Maharashtra"
+  },
+  "categories": [
+    {
+      "id": "soil_properties",
+      "name": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "marathiName": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "icon": "leaf"
+    },
+    {
+      "id": "topography",
+      "name": "Topography & Elevation",
+      "marathiName": "भूरूप आणि उंची",
+      "icon": "mountain"
+    },
+    {
+      "id": "land_use",
+      "name": "Land Use & Multi-Spectral Indices",
+      "marathiName": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "icon": "satellite"
+    }
+  ],
+  "layers": [
+    {
+      "id": "bdod",
+      "key": "bdod_0-30cm_standard",
+      "name": "Bulk Density (0–30 cm)",
+      "marathiName": "मातीची घनता (०-३० सेमी)",
+      "unit": "g/cm³",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Dry mass of soil per unit volume (0–30 cm). Indicator of compaction, root aeration and penetration resistance.",
+      "cmap": "CustomAgro",
+      "min": 1.25,
+      "max": 1.6,
+      "mean": 1.5459,
+      "std": 0.0486,
+      "validPixels": 121499,
+      "image": "layers/bdod.png",
+      "grid": {
+        "file": "grids/bdod.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.1979824172336123e-05,
+        "offset": 0.7996624708175659,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(50, 123, 0)",
+          "value": 1.25
+        },
+        {
+          "pct": 14,
+          "color": "rgb(107, 161, 1)",
+          "value": 1.299
+        },
+        {
+          "pct": 28,
+          "color": "rgb(164, 196, 0)",
+          "value": 1.348
+        },
+        {
+          "pct": 42,
+          "color": "rgb(222, 234, 1)",
+          "value": 1.397
+        },
+        {
+          "pct": 57,
+          "color": "rgb(253, 233, 0)",
+          "value": 1.45
+        },
+        {
+          "pct": 71,
+          "color": "rgb(254, 187, 0)",
+          "value": 1.498
+        },
+        {
+          "pct": 85,
+          "color": "rgb(253, 136, 0)",
+          "value": 1.548
+        },
+        {
+          "pct": 100,
+          "color": "rgb(253, 35, 0)",
+          "value": 1.6
+        }
+      ]
+    },
+    {
+      "id": "cec",
+      "key": "cec_0-30cm_standard",
+      "name": "Cation Exchange Capacity - CEC (0–30 cm)",
+      "marathiName": "धनायन विनिमय क्षमता - CEC (०-३० सेमी)",
+      "unit": "cmol(c)/kg",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Total capacity of soil to hold exchangeable cations (Ca, Mg, K). Reflects nutrient retention & fertility buffer.",
+      "cmap": "CustomAgro",
+      "min": 20.0,
+      "max": 42.0,
+      "mean": 33.4057,
+      "std": 3.715,
+      "validPixels": 121499,
+      "image": "layers/cec.png",
+      "grid": {
+        "file": "grids/cec.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.000363921618539464,
+        "offset": 15.76511001586914,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 20.0
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 23.08
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 26.16
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 29.24
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 32.54
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 35.62
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 38.7
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 42.0
+        }
+      ]
+    },
+    {
+      "id": "cfvo",
+      "key": "cfvo_0-30cm_standard",
+      "name": "Coarse Fragments Volumetric Fraction (0–30 cm)",
+      "marathiName": "जाड दगड-गोटे प्रमाण (०-३० सेमी)",
+      "unit": "%",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Volume percentage of coarse rock fragments (>2mm) in root zone. Affects tillability and water capacity.",
+      "cmap": "CustomAgro",
+      "min": 5.0,
+      "max": 16.0,
+      "mean": 11.3198,
+      "std": 1.168,
+      "validPixels": 121499,
+      "image": "layers/cfvo.png",
+      "grid": {
+        "file": "grids/cfvo.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.0001629078635968029,
+        "offset": 4.887669086456299,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(50, 123, 0)",
+          "value": 5.0
+        },
+        {
+          "pct": 14,
+          "color": "rgb(107, 161, 1)",
+          "value": 6.54
+        },
+        {
+          "pct": 28,
+          "color": "rgb(164, 196, 0)",
+          "value": 8.08
+        },
+        {
+          "pct": 42,
+          "color": "rgb(222, 234, 1)",
+          "value": 9.62
+        },
+        {
+          "pct": 57,
+          "color": "rgb(253, 233, 0)",
+          "value": 11.27
+        },
+        {
+          "pct": 71,
+          "color": "rgb(254, 187, 0)",
+          "value": 12.81
+        },
+        {
+          "pct": 85,
+          "color": "rgb(253, 136, 0)",
+          "value": 14.35
+        },
+        {
+          "pct": 100,
+          "color": "rgb(253, 35, 0)",
+          "value": 16.0
+        }
+      ]
+    },
+    {
+      "id": "clay",
+      "key": "clay_0-30cm_standard",
+      "name": "Clay Proportion (0–30 cm)",
+      "marathiName": "मातीतील चिकण प्रमाण (०-३० सेमी)",
+      "unit": "%",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Clay fraction (<0.002mm) by weight in root zone. Controls water retention, swelling and shrink-swell cracking.",
+      "cmap": "CustomAgro",
+      "min": 28.0,
+      "max": 48.0,
+      "mean": 42.6371,
+      "std": 1.8273,
+      "validPixels": 121499,
+      "image": "layers/clay.png",
+      "grid": {
+        "file": "grids/clay.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.000370412902152145,
+        "offset": 21.837051391601562,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 28.0
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 30.8
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 33.6
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 36.4
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 39.4
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 42.2
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 45.0
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 48.0
+        }
+      ]
+    },
+    {
+      "id": "sand",
+      "key": "sand_0-30cm_standard",
+      "name": "Sand Proportion (0–30 cm)",
+      "marathiName": "मातीतील वाळूचे प्रमाण (०-३० सेमी)",
+      "unit": "%",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Sand fraction (0.05–2.0mm) in root zone. Influences drainage, aeration, and thermal conductivity.",
+      "cmap": "CustomAgro",
+      "min": 18.0,
+      "max": 34.0,
+      "mean": 29.5468,
+      "std": 1.4296,
+      "validPixels": 121499,
+      "image": "layers/sand.png",
+      "grid": {
+        "file": "grids/sand.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.00026833505747203085,
+        "offset": 15.157926559448242,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 18.0
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 20.24
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 22.48
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 24.72
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 27.12
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 29.36
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 31.6
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 34.0
+        }
+      ]
+    },
+    {
+      "id": "silt",
+      "key": "silt_0-30cm_standard",
+      "name": "Silt Proportion (0–30 cm)",
+      "marathiName": "मातीतील गाळाचे प्रमाण (०-३० सेमी)",
+      "unit": "%",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Silt fraction (0.002–0.05mm) in root zone. Provides moisture storage and optimal plant-available water.",
+      "cmap": "CustomAgro",
+      "min": 18.0,
+      "max": 31.0,
+      "mean": 27.3173,
+      "std": 1.248,
+      "validPixels": 121499,
+      "image": "layers/silt.png",
+      "grid": {
+        "file": "grids/silt.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.00022609517554446332,
+        "offset": 14.672443389892578,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 18.0
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 19.82
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 21.64
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 23.46
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 25.41
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 27.23
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 29.05
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 31.0
+        }
+      ]
+    },
+    {
+      "id": "soc",
+      "key": "soc_0-30cm_standard",
+      "name": "Soil Organic Carbon - SOC (0–30 cm)",
+      "marathiName": "सेंद्रिय कर्ब - SOC (०-३० सेमी)",
+      "unit": "%",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Organic carbon percentage in 0–30 cm root zone. Keystone indicator of microbial biological activity & aggregate stability.",
+      "cmap": "CustomAgro",
+      "min": 0.6,
+      "max": 1.4,
+      "mean": 0.9995,
+      "std": 0.1455,
+      "validPixels": 121499,
+      "image": "layers/soc.png",
+      "grid": {
+        "file": "grids/soc.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.3968213984741226e-05,
+        "offset": 0.4528523087501526,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 0.6
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 0.712
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 0.824
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 0.936
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 1.056
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 1.168
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 1.28
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 1.4
+        }
+      ]
+    },
+    {
+      "id": "nitrogen",
+      "key": "nitrogen_0-30cm_standard",
+      "name": "Total Nitrogen (0–30 cm)",
+      "marathiName": "एकूण नत्र (०-३० सेमी)",
+      "unit": "%",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Total Nitrogen concentration in the root zone. Crucial for leaf chlorophyll synthesis and crop vegetative growth.",
+      "cmap": "CustomAgro",
+      "min": 0.65,
+      "max": 1.25,
+      "mean": 1.0368,
+      "std": 0.0821,
+      "validPixels": 121499,
+      "image": "layers/nitrogen.png",
+      "grid": {
+        "file": "grids/nitrogen.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.0495858243813676e-05,
+        "offset": 0.5086863040924072,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 0.65
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 0.734
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 0.818
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 0.902
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 0.992
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 1.076
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 1.16
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 1.25
+        }
+      ]
+    },
+    {
+      "id": "ph",
+      "key": "phh2o_0-30cm_standard",
+      "name": "Soil pH (H₂O) (0–30 cm)",
+      "marathiName": "जमिनीचा सामू (pH) (०-३० सेमी)",
+      "unit": "pH",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Acidity / alkalinity (pH in H2O, 0–30 cm). Optimal neutral to slightly alkaline range for sugarcane & Deccan crops.",
+      "cmap": "CustomAgro",
+      "min": 6.8,
+      "max": 7.4,
+      "mean": 7.1468,
+      "std": 0.2184,
+      "validPixels": 121499,
+      "image": "layers/ph.png",
+      "grid": {
+        "file": "grids/ph.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 5.361891740205272e-05,
+        "offset": 3.7861123085021973,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(253, 35, 0)",
+          "value": 6.8
+        },
+        {
+          "pct": 14,
+          "color": "rgb(253, 136, 0)",
+          "value": 6.884
+        },
+        {
+          "pct": 28,
+          "color": "rgb(254, 187, 0)",
+          "value": 6.968
+        },
+        {
+          "pct": 42,
+          "color": "rgb(253, 233, 0)",
+          "value": 7.052
+        },
+        {
+          "pct": 57,
+          "color": "rgb(222, 234, 1)",
+          "value": 7.142
+        },
+        {
+          "pct": 71,
+          "color": "rgb(164, 196, 0)",
+          "value": 7.226
+        },
+        {
+          "pct": 85,
+          "color": "rgb(107, 161, 1)",
+          "value": 7.31
+        },
+        {
+          "pct": 100,
+          "color": "rgb(50, 123, 0)",
+          "value": 7.4
+        }
+      ]
+    },
+    {
+      "id": "soil_texture",
+      "key": "Soil_Texture_Class_30cm",
+      "name": "USDA Soil Texture Classes (0–30 cm)",
+      "marathiName": "USDA मातीचा पोत वर्ग (०-३० सेमी)",
+      "unit": "Class",
+      "category": "soil_properties",
+      "categoryLabel": "Soil Properties (0–30 cm Root-Zone Standardized)",
+      "categoryLabelMr": "मातीचे गुणधर्म (०-३० सेमी प्रमाणबद्ध)",
+      "description": "Standard USDA Soil Texture Classification (Class 1 = Clay / Deep Vertisols). Dominant black cotton agricultural soil.",
+      "cmap": "CustomAgro",
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0,
+      "validPixels": 121499,
+      "image": "layers/soil_texture.png",
+      "grid": {
+        "file": "grids/soil_texture.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.0,
+        "offset": 0.0,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 100,
+          "color": "rgb(92, 61, 46)",
+          "value": 1.0,
+          "label": "Class 1: Clay - Vertisols (काळी / चिकण माती)"
+        }
+      ]
+    },
+    {
+      "id": "elevation",
+      "key": "MalegaonKh_Elevation_DEM",
+      "name": "Digital Elevation Model (DEM)",
+      "marathiName": "डिजिटल एलिव्हेशन मॉडेल (DEM)",
+      "unit": "meters",
+      "category": "topography",
+      "categoryLabel": "Topography & Elevation",
+      "categoryLabelMr": "भूरूप आणि उंची",
+      "description": "Surface elevation above mean sea level from high-resolution SRTM DEM. Drives surface hydrology and watershed drainage.",
+      "cmap": "CustomAgro",
+      "min": 541.0,
+      "max": 582.0,
+      "mean": 559.1663,
+      "std": 7.3578,
+      "validPixels": 121499,
+      "image": "layers/elevation.png",
+      "grid": {
+        "file": "grids/elevation.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.0006120652483348338,
+        "offset": 541.0,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(45, 106, 79)",
+          "value": 541.0
+        },
+        {
+          "pct": 20,
+          "color": "rgb(82, 183, 136)",
+          "value": 549.2
+        },
+        {
+          "pct": 40,
+          "color": "rgb(183, 228, 199)",
+          "value": 557.4
+        },
+        {
+          "pct": 60,
+          "color": "rgb(224, 192, 151)",
+          "value": 565.6
+        },
+        {
+          "pct": 80,
+          "color": "rgb(212, 163, 115)",
+          "value": 573.8
+        },
+        {
+          "pct": 100,
+          "color": "rgb(140, 80, 35)",
+          "value": 582.0
+        }
+      ]
+    },
+    {
+      "id": "slope",
+      "key": "SRTM_Slope_pct",
+      "name": "Slope Gradient",
+      "marathiName": "जमिनीचा उतार (Slope Gradient)",
+      "unit": "%",
+      "category": "topography",
+      "categoryLabel": "Topography & Elevation",
+      "categoryLabelMr": "भूरूप आणि उंची",
+      "description": "Topographic inclination percentage. Critical for estimating soil erosion risk, water runoff speed and terracing needs.",
+      "cmap": "CustomAgro",
+      "min": 0.0,
+      "max": 15.0,
+      "mean": 3.5577,
+      "std": 1.9777,
+      "validPixels": 121499,
+      "image": "layers/slope.png",
+      "grid": {
+        "file": "grids/slope.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 0.000257891527693327,
+        "offset": 0.0,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(50, 123, 0)",
+          "value": 0.0
+        },
+        {
+          "pct": 14,
+          "color": "rgb(107, 161, 1)",
+          "value": 2.1
+        },
+        {
+          "pct": 28,
+          "color": "rgb(164, 196, 0)",
+          "value": 4.2
+        },
+        {
+          "pct": 42,
+          "color": "rgb(222, 234, 1)",
+          "value": 6.3
+        },
+        {
+          "pct": 57,
+          "color": "rgb(253, 233, 0)",
+          "value": 8.55
+        },
+        {
+          "pct": 71,
+          "color": "rgb(254, 187, 0)",
+          "value": 10.65
+        },
+        {
+          "pct": 85,
+          "color": "rgb(253, 136, 0)",
+          "value": 12.75
+        },
+        {
+          "pct": 100,
+          "color": "rgb(253, 35, 0)",
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "id": "lulc",
+      "key": "LULC",
+      "name": "Land Use / Land Cover (Dynamic World)",
+      "marathiName": "जमीन वापर व आच्छादन (Dynamic World)",
+      "unit": "Class",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Near-real-time global 10m LULC classification by Dynamic World (WRI/Google): Crops, Built, Water, Trees, Shrub, Grass.",
+      "cmap": "CustomAgro",
+      "min": 0.0,
+      "max": 7.0,
+      "mean": 4.0,
+      "std": 1.0,
+      "validPixels": 121499,
+      "image": "layers/lulc.png",
+      "grid": {
+        "file": "grids/lulc.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.0,
+        "offset": 0.0,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(0, 102, 255)",
+          "value": 0.0,
+          "label": "0: Water (पाणी / जलाशय)"
+        },
+        {
+          "pct": 12,
+          "color": "rgb(0, 100, 0)",
+          "value": 1.0,
+          "label": "1: Trees (झाडे / वृक्ष)"
+        },
+        {
+          "pct": 37,
+          "color": "rgb(0, 230, 230)",
+          "value": 3.0,
+          "label": "3: Flooded Vegetation (जलमय वनस्पती)"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(233, 30, 99)",
+          "value": 4.0,
+          "label": "4: Crops (पिके / शेती)"
+        },
+        {
+          "pct": 62,
+          "color": "rgb(128, 128, 0)",
+          "value": 5.0,
+          "label": "5: Shrub & Scrub (झुडपे)"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(63, 81, 181)",
+          "value": 6.0,
+          "label": "6: Built Area (वस्ती / बांधकाम)"
+        }
+      ]
+    },
+    {
+      "id": "kharif_rgb",
+      "key": "MalegaonKh_Kharif_Composite",
+      "name": "Kharif Season True-Color Composite",
+      "marathiName": "खरीप हंगाम नैसर्गिक रंग उपग्रह प्रतिमा",
+      "unit": "RGB",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Monsoon / Kharif season true-color optical satellite imagery composite from Sentinel-2 (Bands 4, 3, 2).",
+      "cmap": "CustomAgro",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2838,
+      "std": 0.1552,
+      "validPixels": 121499,
+      "image": "layers/kharif_rgb.png",
+      "grid": {
+        "file": "grids/kharif_rgb.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.3935560082066472e-05,
+        "offset": -0.21121947467327118,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(40, 60, 40)",
+          "value": 0.0,
+          "label": "Natural True-Color Composite (Bands 4, 3, 2)"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(220, 230, 200)",
+          "value": 1.0,
+          "label": "Optical Surface Reflectance"
+        }
+      ]
+    },
+    {
+      "id": "rabi_rgb",
+      "key": "MalegaonKh_Rabi_Composite",
+      "name": "Rabi Season True-Color Composite",
+      "marathiName": "रब्बी हंगाम नैसर्गिक रंग उपग्रह प्रतिमा",
+      "unit": "RGB",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Winter / Rabi season true-color optical satellite imagery composite from Sentinel-2 (Bands 4, 3, 2).",
+      "cmap": "CustomAgro",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2845,
+      "std": 0.1251,
+      "validPixels": 121499,
+      "image": "layers/rabi_rgb.png",
+      "grid": {
+        "file": "grids/rabi_rgb.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.5472769682672306e-05,
+        "offset": -0.31738823652267456,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(40, 60, 40)",
+          "value": 0.0,
+          "label": "Natural True-Color Composite (Bands 4, 3, 2)"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(220, 230, 200)",
+          "value": 1.0,
+          "label": "Optical Surface Reflectance"
+        }
+      ]
+    },
+    {
+      "id": "ndvi",
+      "key": "MalegaonKh_Annual_NDVI",
+      "name": "Normalized Difference Vegetation Index (NDVI)",
+      "marathiName": "वनस्पती निर्देशांक (NDVI)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Standard vegetation index measuring chlorophyll absorption & near-infrared reflectance. Evaluates crop vigor.",
+      "cmap": "CustomAgro",
+      "min": -0.1232,
+      "max": 0.8544,
+      "mean": 0.3816,
+      "std": 0.1553,
+      "validPixels": 121499,
+      "image": "layers/ndvi.png",
+      "grid": {
+        "file": "grids/ndvi.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.491748200590844e-05,
+        "offset": -0.12318458408117294,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(239, 68, 68)",
+          "hex": "#EF4444",
+          "value": -0.12,
+          "label": "< 0.20: Very Low / Stressed"
+        },
+        {
+          "pct": 25,
+          "color": "rgb(249, 115, 22)",
+          "hex": "#F97316",
+          "value": 0.2,
+          "label": "0.20–0.40: Low / Sparse"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(250, 204, 21)",
+          "hex": "#FACC15",
+          "value": 0.4,
+          "label": "0.40–0.60: Moderate"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(74, 222, 128)",
+          "hex": "#4ADE80",
+          "value": 0.6,
+          "label": "0.60–0.80: Healthy"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(22, 163, 74)",
+          "hex": "#16A34A",
+          "value": 0.8,
+          "label": "> 0.80: Dense / Very Healthy"
+        }
+      ]
+    },
+    {
+      "id": "evi",
+      "key": "MalegaonKh_Annual_EVI",
+      "name": "Enhanced Vegetation Index (EVI)",
+      "marathiName": "वर्धित वनस्पती निर्देशांक (EVI)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Optimized index with reduced canopy background and atmospheric aerosol sensitivity. Ideal for dense crops.",
+      "cmap": "CustomAgro",
+      "min": -0.0224,
+      "max": 0.6649,
+      "mean": 0.2502,
+      "std": 0.1037,
+      "validPixels": 121499,
+      "image": "layers/evi.png",
+      "grid": {
+        "file": "grids/evi.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.0487973082017195e-05,
+        "offset": -0.022436823695898056,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(239, 68, 68)",
+          "hex": "#EF4444",
+          "value": -0.02,
+          "label": "< 0.12: Low EVI / Stressed"
+        },
+        {
+          "pct": 25,
+          "color": "rgb(249, 115, 22)",
+          "hex": "#F97316",
+          "value": 0.12,
+          "label": "0.12–0.20: Moderate-Low"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(250, 204, 21)",
+          "hex": "#FACC15",
+          "value": 0.2,
+          "label": "0.20–0.30: Moderate"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(74, 222, 128)",
+          "hex": "#4ADE80",
+          "value": 0.3,
+          "label": "0.30–0.42: Healthy"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(22, 163, 74)",
+          "hex": "#16A34A",
+          "value": 0.42,
+          "label": "> 0.42: High / Dense"
+        }
+      ]
+    },
+    {
+      "id": "savi",
+      "key": "MalegaonKh_Annual_SAVI",
+      "name": "Soil-Adjusted Vegetation Index (SAVI)",
+      "marathiName": "माती-समायोजित वनस्पती निर्देशांक (SAVI)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Adjusts for soil brightness influences in early vegetative or sparse canopy stages (L = 0.5 factor).",
+      "cmap": "CustomAgro",
+      "min": -0.0251,
+      "max": 0.5828,
+      "mean": 0.2325,
+      "std": 0.0931,
+      "validPixels": 121499,
+      "image": "layers/savi.png",
+      "grid": {
+        "file": "grids/savi.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 9.276348447522823e-06,
+        "offset": -0.025137705728411674,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(239, 68, 68)",
+          "hex": "#EF4444",
+          "value": -0.03,
+          "label": "< 0.12: Low Vegetation"
+        },
+        {
+          "pct": 25,
+          "color": "rgb(249, 115, 22)",
+          "hex": "#F97316",
+          "value": 0.12,
+          "label": "0.12–0.18: Low-Moderate"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(250, 204, 21)",
+          "hex": "#FACC15",
+          "value": 0.18,
+          "label": "0.18–0.28: Moderate"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(74, 222, 128)",
+          "hex": "#4ADE80",
+          "value": 0.28,
+          "label": "0.28–0.40: Healthy"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(22, 163, 74)",
+          "hex": "#16A34A",
+          "value": 0.4,
+          "label": "> 0.40: Dense Vegetation"
+        }
+      ]
+    },
+    {
+      "id": "ndmi",
+      "key": "MalegaonKh_Annual_NDMI",
+      "name": "Normalized Difference Moisture Index (NDMI)",
+      "marathiName": "ओलावा निर्देशांक (NDMI)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Monitors crop canopy water content and root-zone soil moisture stress using NIR (B8A) and SWIR (B11).",
+      "cmap": "CustomAgro",
+      "min": -0.535,
+      "max": 0.457,
+      "mean": 0.0578,
+      "std": 0.1129,
+      "validPixels": 121499,
+      "image": "layers/ndmi.png",
+      "grid": {
+        "file": "grids/ndmi.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.513839421042496e-05,
+        "offset": -0.5350323915481567,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(186, 230, 253)",
+          "hex": "#BAE6FD",
+          "value": -0.54,
+          "label": "< -0.08: Low Moisture (Sky Blue)"
+        },
+        {
+          "pct": 25,
+          "color": "rgb(56, 189, 248)",
+          "hex": "#38BDF8",
+          "value": -0.08,
+          "label": "-0.08–0.02: Mild Moisture"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(2, 132, 199)",
+          "hex": "#0284C7",
+          "value": 0.02,
+          "label": "0.02–0.12: Moderate Moisture"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(29, 78, 216)",
+          "hex": "#1D4ED8",
+          "value": 0.12,
+          "label": "0.12–0.24: High Moisture"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(23, 37, 84)",
+          "hex": "#172554",
+          "value": 0.24,
+          "label": "> 0.24: High Moisture (Dark Blue)"
+        }
+      ]
+    },
+    {
+      "id": "ndre",
+      "key": "MalegaonKh_Annual_NDRE",
+      "name": "Normalized Difference Red Edge (NDRE)",
+      "marathiName": "रेड एज वनस्पती निर्देशांक (NDRE)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Uses Sentinel-2 RedEdge (B5/B7) for nitrogen content estimation without early saturation in thick sugarcane.",
+      "cmap": "CustomAgro",
+      "min": -0.3936,
+      "max": 0.6299,
+      "mean": 0.2448,
+      "std": 0.1144,
+      "validPixels": 121499,
+      "image": "layers/ndre.png",
+      "grid": {
+        "file": "grids/ndre.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.561772391492477e-05,
+        "offset": -0.3936185836791992,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(239, 68, 68)",
+          "hex": "#EF4444",
+          "value": -0.39,
+          "label": "< 0.12: Low / Stressed"
+        },
+        {
+          "pct": 25,
+          "color": "rgb(249, 115, 22)",
+          "hex": "#F97316",
+          "value": 0.12,
+          "label": "0.12–0.20: Moderate-Low"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(250, 204, 21)",
+          "hex": "#FACC15",
+          "value": 0.2,
+          "label": "0.20–0.30: Moderate"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(74, 222, 128)",
+          "hex": "#4ADE80",
+          "value": 0.3,
+          "label": "0.30–0.42: Healthy"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(22, 163, 74)",
+          "hex": "#16A34A",
+          "value": 0.42,
+          "label": "> 0.42: High / Dense"
+        }
+      ]
+    },
+    {
+      "id": "bsi",
+      "key": "MalegaonKh_Annual_BSI",
+      "name": "Bare Soil Index (BSI)",
+      "marathiName": "उघडी माती निर्देशांक (BSI)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Differentiates bare agricultural soil from fallow ground, gravel and dense crop cover using SWIR + Blue bands.",
+      "cmap": "CustomAgro",
+      "min": -0.39,
+      "max": 0.381,
+      "mean": 0.0086,
+      "std": 0.1037,
+      "validPixels": 121499,
+      "image": "layers/bsi.png",
+      "grid": {
+        "file": "grids/bsi.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.1765690752390842e-05,
+        "offset": -0.390048623085022,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(22, 163, 74)",
+          "hex": "#16A34A",
+          "value": -0.39,
+          "label": "< -0.05: Dense Vegetation Cover"
+        },
+        {
+          "pct": 33,
+          "color": "rgb(250, 204, 21)",
+          "hex": "#FACC15",
+          "value": -0.05,
+          "label": "-0.05–0.04: Mixed Cover"
+        },
+        {
+          "pct": 66,
+          "color": "rgb(249, 115, 22)",
+          "hex": "#F97316",
+          "value": 0.04,
+          "label": "0.04–0.12: Partial Soil Exposure"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(239, 68, 68)",
+          "hex": "#EF4444",
+          "value": 0.12,
+          "label": "> 0.12: Bare / Exposed Soil"
+        }
+      ]
+    },
+    {
+      "id": "ndwi",
+      "key": "MalegaonKh_Annual_NDWI",
+      "name": "Normalized Difference Water Index (NDWI)",
+      "marathiName": "पाणी निर्देशांक (NDWI)",
+      "unit": "index",
+      "category": "land_use",
+      "categoryLabel": "Land Use & Multi-Spectral Indices",
+      "categoryLabelMr": "जमीन वापर आणि बहु-स्पेक्ट्रल निर्देशांक",
+      "description": "Delineates open surface water bodies, canals, farm ponds and saturated wetland inundation zones.",
+      "cmap": "CustomAgro",
+      "min": -0.7861,
+      "max": 0.356,
+      "mean": -0.4302,
+      "std": 0.115,
+      "validPixels": 121499,
+      "image": "layers/ndwi.png",
+      "grid": {
+        "file": "grids/ndwi.bin",
+        "width": 467,
+        "height": 389,
+        "dtype": "uint16",
+        "scale": 1.7426410280039586e-05,
+        "offset": -0.7860574722290039,
+        "nodata": 65535
+      },
+      "legendStops": [
+        {
+          "pct": 0,
+          "color": "rgb(186, 230, 253)",
+          "hex": "#BAE6FD",
+          "value": -0.79,
+          "label": "< -0.50: Very Low / Dry (Sky Blue)"
+        },
+        {
+          "pct": 25,
+          "color": "rgb(56, 189, 248)",
+          "hex": "#38BDF8",
+          "value": -0.5,
+          "label": "-0.50–-0.38: Low Water Presence"
+        },
+        {
+          "pct": 50,
+          "color": "rgb(2, 132, 199)",
+          "hex": "#0284C7",
+          "value": -0.38,
+          "label": "-0.38–-0.20: Moderate Water"
+        },
+        {
+          "pct": 75,
+          "color": "rgb(29, 78, 216)",
+          "hex": "#1D4ED8",
+          "value": -0.2,
+          "label": "-0.20–0.00: High Water"
+        },
+        {
+          "pct": 100,
+          "color": "rgb(23, 37, 84)",
+          "hex": "#172554",
+          "value": 0.0,
+          "label": "> 0.00: Surface Water (Dark Blue)"
+        }
+      ]
+    }
+  ]
+}

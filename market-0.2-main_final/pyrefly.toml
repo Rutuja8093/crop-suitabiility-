@@ -1,0 +1,11 @@
+preset = "basic"
+python-interpreter-path = "c:/Users/Admin/Downloads/SoilPilot_texturetriangle-main/SoilPilot_texturetriangle-main/backend/.venv/Scripts/python.exe"
+
+search-path = [
+    ".",
+    "backend",
+    "backend/.venv/Lib/site-packages",
+    "scripts",
+    "scripts/database",
+    "scripts/gis"
+]
